@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1 | CSS Layout Workshop</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+       
+      }
+      label,
+      input,
+      textarea,
+      button {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: block;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+      }
+      header {
+        padding: 4rem 1.5rem;
+        background-color: black;
+        color: white;
+      }
+      section {
+         margin-top: 4rem; 
+         }
+      main {
+        padding: 0 1.5rem;
+      }
+      .center{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .welcome{
+        max-width: 60rem;
+      }
+      .fs{
+        max-width: 40rem;
+        margin-top: 4rem;
+      }
+      .contact{
+        max-width: 20rem;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="center welcome">
+      <h1>Welcome to my site</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+        itaque voluptatibus magnam perspiciatis, accusantium atque alias
+        cupiditate provident nemo quo placeat incidunt commodi ea aperiam
+        voluptatum corporis soluta impedit eaque.
+      </p>
+      </div>
+    </header>
+    <main>
+      <section class="center fs">
+        <h2>The first section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+          itaque voluptatibus magnam perspiciatis, accusantium atque alias
+          cupiditate provident nemo quo placeat incidunt commodi ea aperiam
+          voluptatum corporis soluta impedit eaque.
+        </p>
+      </section>
+
+      <section class="center contact">
+        <h2>Contact me</h2>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+
+          <div>
+            <label for="name">Email</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
